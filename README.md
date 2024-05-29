@@ -4,7 +4,7 @@ To do list API
 <br>
 
 <div align="right">
-  Click <a href="https://github.com/luc-ribeiro/todo-api-node/blob/master/README.md">here</a> to view the english version.
+  Clique <a href="https://github.com/luc-ribeiro/todo-api-node/blob/master/README-PTBR.md">aqui</a> para ver a versão em Português.
 </div>
 
 ## 💻 Project
