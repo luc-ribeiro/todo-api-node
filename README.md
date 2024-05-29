@@ -1,14 +1,16 @@
 <h1 align="center">
-To do list API com Node e TypeScript
+Node.ts To do list API
 </h1>
 <br>
 
-## 💻 Projeto
-Este projeto foi criado durante o curso de NodeJS da B7 Web.
+<div align="right">
+  Click <a href="https://github.com/luc-ribeiro/todo-api-node/blob/master/README.md">here</a> to view the english version.
+</div>
 
-O projeto consiste em uma API REST para cadastro, leitura, alteração e deleção de "To dos".
+## 💻 Project
+The project consists of a REST API for creating, reading, updating, and deleting "To dos".
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
 - **Node.js** 
 - **Express**
@@ -20,65 +22,61 @@ O projeto consiste em uma API REST para cadastro, leitura, alteração e deleç�
 
 ![preview](https://github.com/luc-ribeiro/nodets-todo-api/blob/master/design/preview.gif)
 
-#### Tabela do Banco de Dados
+#### Database Table
 
 ![banner](https://github.com/luc-ribeiro/nodets-todo-api/blob/master/design/bd-preview.png)
 
 <br>
 
-## :page_facing_up: Como utilizar
+## :page_facing_up: How to use
 
-Faça um clone deste repositório:
+Clone this repository:
 
 ```sh
   $ git clone https://github.com/luc-ribeiro/nodets-todo-api.git
 ```
 
-Instale as dependências:
+Install the dependencies:
 
 ```sh
-  # com npm
+  # with npm
   $ npm install
 
-  # com yarn
+  # with yarn
   $ yarn install
 ```
 
-Criar um arquivo `.env` na raiz do projeto <br><br>
-Nesse arquivo, definir as seguintes configurações:
+Create a `.env` file at the root of the project <br><br>
+In this file, define the following settings:
 
 ```sh
-PORT=NúmeroDaPortaQueAAplicaçãoIráRodar
+PORT=PortNumberWhereTheApplicationWillRun
 
-PG_DB=NomeDoBancoDeDados
-PG_USER=NomeDoUsuárioDoBancoDeDados
-PG_PASSWORD=SenhaDoUsuário
-PG_PORT=NúmeroDaPortaDoBancoDeDados
+PG_DB=DatabaseName
+PG_USER=DatabaseUserName
+PG_PASSWORD=UserPassword
+PG_PORT=DatabasePortNumber
 ```
 
-Criar uma tabela no Banco de Dados com o nome `todos`
+Create a table in the Database named `todos`
 
-Execute o comando:
+Run the command:
 
 ```sh
-  # com npm
+  # with npm
   $ npm run start-dev
 
-  # com yarn
+  # with yarn
   $ yarn start-dev
 ```
 
 <br>
 
-### Utilizando as rotas
+### Using the routes
 
-Após definir o número da porta no arquivo `.env`:
+After defining the port number in the `.env` file:
 
-`GET` `localhost:NumeroDaPorta/todo` → Irá lista os To Dos cadastrados no Banco de Dados. <br><br>
-`POST` `localhost:NumeroDaPorta/todo` → Irá cadastrar um To Do, é necessário informar no Body da requisição o `title`, que será o nome do To Do.<br><br>
-`PUT` `localhost:NumeroDaPorta/todo/:id` → Irá atualizar o To Do com o ID informado. Necessário informar o `title` no Body da requisição. <br><br>
-`DELETE` `localhost:NumeroDaPorta/todo/:id` → Irá deletar o To Do com o ID informado. <br><br>
-
-## :memo: License
-
-Copyright © 2021 Lucas Ribeiro / B7 Web
+`GET` `localhost:PortNumber/todo` → Lists the To Dos registered in the Database. <br><br>
+`POST` `localhost:PortNumber/todo` → Registers a To Do, you need to inform the `title` in the request Body, which will be the name of the To Do.<br><br>
+`PUT` `localhost:PortNumber/todo/:id` → Updates the To Do with the informed ID. It is necessary to inform the `title` in the request Body. <br><br>
+`DELETE` `localhost:PortNumber/todo/:id` → Deletes the To Do with the informed ID. <br><br>
