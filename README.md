@@ -1,5 +1,5 @@
 <h1 align="center">
-Node.ts To do list API
+To do list API
 </h1>
 <br>
 
